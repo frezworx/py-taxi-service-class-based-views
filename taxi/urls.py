@@ -12,7 +12,9 @@ urlpatterns = [
         "drivers/<int:pk>/", DriverDetailView.as_view(), name="driver-detail"
     ),
     path(
-        "manufacturers/", ManufacturerListView.as_view(), name="manufacturer-list"
+        "manufacturers/",
+        ManufacturerListView.as_view(),
+        name="manufacturer-list"
     ),
 ]
 
