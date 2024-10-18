@@ -9,14 +9,14 @@
     </tr>
     </thead>
     <tbody>
-      {% for car in driver.cars.all %}
+      {% for car in driver.cars.all() %}
         <tr>
           <td>{{ car.model }}</td>
           <td>{{ car.manufacturer.name }}</td>
         </tr>
         {% empty %}
         <tr>
-          <td colspan="2">The driver doesn't a car</td>
+          <td colspan="2">The driver doesn't have a car</td>
         </tr>
       {% endfor %}
     </tbody>
