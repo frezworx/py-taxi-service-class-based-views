@@ -9,7 +9,7 @@
     </tr>
     </thead>
     <tbody>
-      {% for car in driver.cars.all() %}
+      {% for car in driver.cars.all %}
         <tr>
           <td>{{ car.model }}</td>
           <td>{{ car.manufacturer.name }}</td>
