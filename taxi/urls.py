@@ -5,10 +5,6 @@ from .views import index, ManufacturerListView, CarsListView, CarDetailView, \
 
 urlpatterns = [
     path("", index, name="index"),
-    path(
-        "manufacturers/", ManufacturerListView.as_view(),
-        name="manufacturers"
-    ),
     path("cars/", CarsListView.as_view(), name="car-list"),
     path("cars/<int:pk>/", CarDetailView.as_view(), name="car-detail"),
     path("drivers/", DriverListView.as_view(), name="driver-list"),
